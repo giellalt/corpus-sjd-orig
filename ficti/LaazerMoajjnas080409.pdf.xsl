@@ -20,7 +20,7 @@
 <xsl:variable name="text_encoding" select="''"/>
 <xsl:variable name="title" select="'Яковлев Мыдтҍре Ла̄зэр'"/>
 <xsl:variable name="author1_fn" select="'Nina Eliseevna'"/>
-<xsl:variable name="author1_ln" select="'Afanas'eva'"/>
+<xsl:variable name="author1_ln" select="'Afanaseva'"/>
 <xsl:variable name="author1_gender" select="'f'"/>
 <xsl:variable name="author1_nat" select="''"/>
 <xsl:variable name="author1_born" select="''"/>
