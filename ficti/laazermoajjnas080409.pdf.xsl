@@ -1,18 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- Format query results for display --><xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:i18n="http://apache.org/cocoon/i18n/2.1" version="1.0">
 
-<!-- Format query results for display -->
-
-<xsl:stylesheet
-    xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-    xmlns:i18n="http://apache.org/cocoon/i18n/2.1"
-    version="1.0">
-
-<xsl:output method="xml"
-            version="1.0"
-            encoding="UTF-8"
-            indent="yes"
-            doctype-public="-//UIT//DTD Corpus V1.0//EN"
-			doctype-system="http://giellatekno.uit.no/dtd/corpus.dtd"/>
+<xsl:output method="xml" version="1.0" encoding="UTF-8" indent="yes" doctype-public="-//UIT//DTD Corpus V1.0//EN" doctype-system="http://giellatekno.uit.no/dtd/corpus.dtd"/>
 
 <!-- Add the metainformation manually -->
 <!-- variable filename contains the original name of the file (from submitter)-->
@@ -45,7 +34,7 @@
 <xsl:variable name="ISBN" select="'978-3-932406-91-1'"/>
 <xsl:variable name="ISSN" select="'1866-5632'"/>
 <xsl:variable name="place" select="'Berlin'"/>
-<xsl:variable name="genre" select="'prose'"/>
+<xsl:variable name="genre" select="'ficti'"/>
 <xsl:variable name="collection" select="'Ла̄зэр ка̄ллса моаййнас'"/>
 <xsl:variable name="translated_from" select="''"/>
 <xsl:variable name="translator_fn" select="''"/>
