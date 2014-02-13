@@ -1,13 +1,16 @@
 =====
 Intro
 =====
-.eaf is the name extension for ELAN files, but it is basically an XML file (and can be opened as such).
 
-The programm ELAN links text annotations to audio/video, it can be used both for  creating and presenting time aligned text annotations of multimedia data. ELAN has also built-in a corpus search tool, incl. regex, cross-tier, and cross-corpus (across more than one ELAN-file) search functionality.
+"spoken" is a new dir, created for (transcribed) spoken language data stored at freecorpus by the Freiburg based language documentation projects.
 
-ELAN is the annotation and presentation software used by the Pite and Kola Saami and (in the future) Izhva-Komi Dcumentation Projects. Since the text annotations   written by us in ELAN include minimally an orthographic tier and one translation into the local lingua franca, these data can be used as parallel corpora.
+.eaf is the name extension for ELAN files, which we produce in our projects. These are basically XML files (and can be opened as such), but they can also be read by the program ELAN.
 
-ELAN can be downloaded here:
+The GUI programm ELAN time aligns text annotations to audio/video, it can be used for creating and presenting time aligned text annotations of multimedia data. ELAN has also built-in a corpus search tool, incl. regex, cross-tier, and cross-corpus (across multiple ELAN-files) search functionality. For ELAN files stored at the archive in Nijmegen, the corpus functionality works also online.
+
+ELAN is used by very many language documentation projects, like in DOBES, HRELP and other such programs. ELAN is also the annotation and presentation software used by the Freiburg-based Pite Saami, Kola Saami and Izhva-Komi Dcumentation Projects. Since the text annotations written by us in ELAN include minimally an orthographic tier and one translation into the local lingua franca, these data can be used as parallel corpora.
+
+ELAN is documented and can be downloaded here:
 *http://tla.mpi.nl/tools/tla-tools/elan/
 
 The present folder includes ELAN example data for testing a pipeline between the multimedia archive at TLA and the corpus infrastructure at GT. Only the .eaf-files (the annotations) are stored at GT. Here are the original audio/video files:
@@ -18,29 +21,48 @@ The present folder includes ELAN example data for testing a pipeline between the
 ELAN test files at GT
 =====
 
-The current ELAN example files KIL061212AfanasjevaNE_Ryhp_Clip131206 and KIL070421Kudckullj include more tiers than the ones for orthography and translations, see the respective screenshoots. But the tierstructure in both files is different. Relevant for Korp are perhaps only the following tiers:
+The current ELAN example files KIL061212AfanasjevaNE_Ryhp_Clip131206 and KIL070421Kudckullj include more tiers than the ones relevant for the Freiburg-Tromsø work. Relevant for us are only the following tiers:
 *ref (reference to the selected utterance)
 *orth (orthographic representation)
-*pos (parts-of-speech)
-*transl (translations into different languages)
+*word (tokenized orth-tier)
+*lemma
+*pos
+*morph
+*ft-XYZ (translations into different languages)
 
-The morphsyntactic glossing in the example files is not always very consistant (because it was done manually). Some parts are missing completely.
+See also the respective screenshoots. 
 
-In KIL070421Kudckullj there is a passage without orthographic transcription because the speaker switched to Russian.
+Note that the morphosyntactic glossing in the other tiers of the example files is not always very consistent (because it was done manually). 
 
-=====
-TODO (for the ELAN-part)
-=====
-
-Currently, we are working out a common tier structure for all of our ELAN files (across the Pite and Kola Saami as well as Izhva-Komi projects).
-
-Also special conventions for representing characteristics of spoken language (not occuring in the other GT corpora), like false starts, hesitations, etc. are still needed.
-
-??
+Some parts opf annotations are also incomplete.
 
 =====
-TODO (for the GT-part)
+TODO (for the ELAN-part [Freiburg])
 =====
 
-??
+In Freiburg, we have worked out a common tier structure for all of our ELAN files (across the Pite and Kola Saami as well as Izhva-Komi projects).
+
+Also special conventions for representing characteristics of spoken language (not occuring in the other GT corpora), like false starts, hesitations, etc. are conventionalized. 
+
+These conventions are now checked and adjested if neccessary. A proper documentation for this will also be started soon.
+
+=====
+TODO (for the GT-part [Tromsø])
+=====
+
+Our aim is to overcome manual annotation of our recordings, but instead use computational tools, like the fst analyzers.
+
+==> We need a pipeline for:
+==> 1) running the morphological analyzis on the text transcribed in ELAN
+==> 2) bringing the resulting analyzed and glossed word forms back into the ELAN structure
+
+The relevant tiers for the analyzes are either the tier called "orth" (including whole utterances) or the tier called "word" (including utterances devided into single tokens).
+
+The relevant ELAN tier, into which the analyzed forms are to be merged is "morph".
+
+=====
+TODO (for the ELAN/GT-part [Freiburg/Tromsø])
+=====
+
+Once the pipeline described above works, we need to continue writing the fst for the relevant languages.
 
