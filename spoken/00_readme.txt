@@ -58,7 +58,20 @@ Our aim is to overcome manual annotation of our recordings, but instead use comp
 
 The relevant tiers for the analyzes are either the tier called "orth" (including whole utterances) or the tier called "word" (including utterances devided into single tokens).
 
-The relevant ELAN tier, into which the analyzed forms are to be merged is "morph".
+The relevant ELAN tiers, into which the analyzed forms are to be merged are *lemma
+*pos
+*morph
+E.g. a Kildin form та̄лэсьт (та̄лл+N+Sg+Loc) should be represented in the ELAN structure like:
+*та̄лл
+*N
+*Sg Loc
+or the (ambigue) form та̄л (та̄лл+N+Sg+Gen | та̄лл+N+Pl+Nom):
+*та̄лл
+*N
+*Sg Loc | Pl Nom
+or the like.
+
+Note that we would like to create three different tiers in ELAN, rather than one linear representation with lemma+pos+morph.
 
 =====
 TODO (for the ELAN/GT-part [Freiburg/Tromsø])
