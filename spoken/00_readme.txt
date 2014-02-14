@@ -18,23 +18,25 @@ The present folder includes ELAN example data for testing a pipeline between the
 *http://corpus1.mpi.nl/ds/imdi_browser?openpath=MPI1566753%23
 
 =====
-ELAN test files at GT
+ELAN test files in the present dir
 =====
 
-The current ELAN example files KIL061212AfanasjevaNE_Ryhp_Clip131206 and KIL070421Kudckullj include more tiers than the ones relevant for the Freiburg-Tromsø work. Relevant for us are only the following tiers:
-*ref (reference to the selected utterance)
+The ELAN example files might include more tiers than the ones relevant for the Freiburg-Tromsø work. Relevant for us are only the following tiers:
+*ref (reference to the selected utterance [unique labels are provided automatically by ELAN])
 *orth (orthographic representation)
-*word (tokenized orth-tier)
+*word (tokenized orth-tier [tokenization can be done automatically in ELAN])
 *lemma
 *pos
 *morph
 *ft-XYZ (translations into different languages)
 
-See also the respective screenshoots. 
+Normally several speakers are transcribed in one ELAN session. Each speaker gets its own ref-tier (and the respective childs in the tier structure). In the teir-names different speakers are differentiated by …@SpeakerXYZ.
+
+See also the respective screenshoots for some of the test ELAN-files. 
 
 Note that the morphosyntactic glossing in the other tiers of the example files is not always very consistent (because it was done manually). 
 
-Some parts opf annotations are also incomplete.
+Some parts of the annotations are also incomplete.
 
 =====
 TODO (for the ELAN-part [Freiburg])
