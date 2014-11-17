@@ -36,10 +36,10 @@ orth@xyz  | Та̄лл лӣ шӯр           |
 word@xyz  | та̄лл | лӣ | шӯр | .   |
 pos@xyz   | N    | V  | Adj | PCT |
 
-Ambiguity?
+POS-Ambiguity?
 N || V
-Ambiguitäten einschränkt anbieten für die weitere manuelle Bestimmung der Wortklasse
-
+Alle POS-Ambiguitäten für die weitere manuelle Bestimmung der Wortklasse anbieten,
+jedoch so viele wie möglich automatisch kontextuell filtern.
 
 =====
 TODO [later]
