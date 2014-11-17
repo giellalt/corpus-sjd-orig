@@ -9,6 +9,62 @@ Annotations written by us in ELAN include minimally an orthographic tier and one
 The present folder includes ELAN example data for testing a pipeline between the multimedia archive at TLA and the corpus infrastructure at GT. Only the .eaf-files (the annotations) are stored at GT. The original audio/video files (available from The Language Archive (e.g. http://corpus1.mpi.nl/ds/imdi_browser?openpath=MPI1737337%23 or http://corpus1.mpi.nl/ds/imdi_browser?openpath=MPI1566753%23) are not relevant here, but can always be linked back to the ELAN-annotations.
 
 =====
+TODO (for the GT-part [Ciprian])
+=====
+
+Our aim is to overcome manual annotation of our recordings, but instead use computational tools, like Giellatekno's FST analyzers.
+
+==> We need a pipeline for:
+==> 1) running the FST morphological analyzer on the text transcribed in ELAN
+==> 2) bringing the resulting analyzis back into the ELAN structure
+
+We will test this pipeline with a preliminary PoS tagger based on the FST morphological analyzer. 
+
+The relevant tier for the analyzer is the tier called "word", which inlcudes the utterance devided into tokens. 
+
+The result of the analyzis (i.e. PoS tags) are written in the dependend tier "pos".
+
+Example 
+(ELAN source data)
+ref@xyz   | sjd0000xyz-1        |
+orth@xyz  | Та̄лл лӣ шӯр.        |
+word@xyz  | та̄лл | лӣ | шӯр | . |
+
+(ELAN after tagging)
+ref@xyz   | sjd0000xyz-1          |
+orth@xyz  | Та̄лл лӣ шӯр           |
+word@xyz  | та̄лл | лӣ | шӯр | .   |
+pos@xyz   | N    | V  | Adj | PCT |
+
+Ambiguity?
+N || V
+Ambiguitäten einschränkt anbieten für die weitere manuelle Bestimmung der Wortklasse
+
+
+=====
+TODO [later]
+=====
+
+We will test this pipeline with the FST morphological analyzer. 
+
+First, we create a copy of "word" called "morph". The analyzed forms should be merged into this new tier. E.g. a Kildin form та̄лэсьт should be written in the tier "morph" as:
+*та̄лл+N+Sg+Loc
+
+Ambiguity?
+та̄лл+N+Sg+Gen || та̄лл+N+Pl+Nom
+
+It might be useful to split the result of the analysis into three separate tiers (instead of presenting them in linerar order):
+*lemma
+*pos
+*morph
+
+E.g. та̄лэсьт:
+*(lemma) та̄лл
+*(pos) N
+*(morph) Sg+Loc
+
+
+=====
 ELAN test files in the present dir
 =====
 
@@ -28,36 +84,44 @@ Note that the morphosyntactic glossing in the other tiers of the example files i
 
 Some parts of the annotations are also incomplete.
 
-=====
-TODO (for the GT-part [Tromsø])
-=====
-
-Our aim is to overcome manual annotation of our recordings, but instead use computational tools, like Giellatekno's FST analyzers.
-
-==> We need a pipeline for:
-==> 1) running the morphological analyzis on the text transcribed in ELAN
-==> 2) bringing the resulting analyzed and glossed word forms back into the ELAN structure
-
-The relevant tier for the analyzer is the tier called "word" (including the utterance devided into tokens). 
-
-First, we create copy of "word" called "morph". The analyzed forms should be merged into this new tier. E.g. a Kildin form та̄лэсьт should be written in the tier "morph" as:
-*та̄лл+N+Sg+Loc
-
-Disambiguation is not important now. E.g. the ambigue form та̄л will be analyzed as:
-*та̄лл+N+Sg+Gen
-and
-*та̄лл+N+Pl+Nom
 
 =====
-TODO (later)
+TODO (for the FR-part [Michael])
 =====
 
-It might be useful to split the result of the analysis into three separate tiers (instead of presenting them in linerar order):
-*lemma
-*pos
-*morph
+1) Goldstandard für ELAN-Annotationen fixieren
+minimal tier set
+*ref(erence tier)
+*orth(ography tier)
+*word (tier)
+*pos (tier)
 
-E.g. та̄лэсьт:
-*(lemma) та̄лл
-*(pos) N
-*(morph) Sg+Loc
+
+2) FST verbessern
+*Lexc-Dateien für geschlossene Klassen
+
+
+====
+Other Notes
+====
+
+Unsere Sprachen sind aktuell sje, sjd, sms, kpv; wir nehmen als Beispiel nur eine Sprache
+
+Korp (textbasiert)
+*Göteborg
+*GT
+*Sprachrat DK (intern)
+
+Korp (multimodal)
+*Finnland
+**sie benutzen ELAN
+**https://korp.csc.fi/
+
+http://metashare.nb.no/repository/browse/norwegian-bokmal-north-saami-translation-memory/a8eab8fa58d611e2ba24001708556d5ae14e31c15b964f3d99590c50f9b4a95b/
+
+Metadaten-Editor 
+*Arbil (aktuell noch mit IMDI)
+*CMDI-Maker ("Arbil für Dummies")
+*Bergen: Paul Meurers Werkzeug
+*Prag: Tools dort entwickelt
+
