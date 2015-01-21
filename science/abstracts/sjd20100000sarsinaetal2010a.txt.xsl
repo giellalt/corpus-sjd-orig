@@ -6,26 +6,26 @@
     <!-- Add the metainformation manually -->
     <!-- variable filename contains the original name of the file (from submitter)-->
     <xsl:variable name="filename" select="'sjd20100000sarsinaetal2010a.txt'"/>
-    <xsl:variable name="text_encoding" select="''"/>
+    <xsl:variable name="text_encoding" select="'UTF-8'"/>
     <xsl:variable name="title" select="'Оанҍхесь кыррьй'"/>
     <xsl:variable name="author1_fn" select="'Нина'"/>
     <xsl:variable name="author1_ln" select="'Шаршина'"/>
-    <xsl:variable name="author1_gender" select="'female'"/>
+    <xsl:variable name="author1_gender" select="'f'"/>
     <xsl:variable name="author1_nat" select="'Sami'"/>
     <xsl:variable name="author1_born" select="'1959-11-22'"/>
     <xsl:variable name="author2_fn" select="'Валентина'"/>
     <xsl:variable name="author2_ln" select="'Кирилова'"/>
-    <xsl:variable name="author2_gender" select="'female'"/>
+    <xsl:variable name="author2_gender" select="'f'"/>
     <xsl:variable name="author2_nat" select="'Komi'"/>
     <xsl:variable name="author2_born" select="''"/>
     <xsl:variable name="author3_fn" select="'Алла'"/>
     <xsl:variable name="author3_ln" select="'Васильева'"/>
-    <xsl:variable name="author3_gender" select="'female'"/>
+    <xsl:variable name="author3_gender" select="'f'"/>
     <xsl:variable name="author3_nat" select="'Sami'"/>
     <xsl:variable name="author3_born" select="''"/>
     <xsl:variable name="author4_fn" select="'Са̄нндрэ'"/>
     <xsl:variable name="author4_ln" select="'Антонова'"/>
-    <xsl:variable name="author4_gender" select="'female'"/>
+    <xsl:variable name="author4_gender" select="'f'"/>
     <xsl:variable name="author4_nat" select="'Sami'"/>
     <xsl:variable name="author4_born" select="'1932-05-05'"/>
     <xsl:variable name="publisher" select="'Мурманское книжное издательство'"/>

@@ -6,30 +6,30 @@
 <!-- Add the metainformation manually -->
 <!-- variable filename contains the original name of the file (from submitter)-->
 <xsl:variable name="filename" select="'LaazerMoajjnas080409.pdf'"/>
-<xsl:variable name="text_encoding" select="''"/>
-<xsl:variable name="title" select="'Яковлев Мыдтҍре Ла̄зэр'"/>
-<xsl:variable name="author1_fn" select="'Nina Eliseevna'"/>
-<xsl:variable name="author1_ln" select="'Afanaseva'"/>
-<xsl:variable name="author1_gender" select="'f'"/>
-<xsl:variable name="author1_nat" select="''"/>
-<xsl:variable name="author1_born" select="''"/>
-<xsl:variable name="author2_fn" select="''"/>
-<xsl:variable name="author2_ln" select="''"/>
-<xsl:variable name="author2_gender" select="''"/>
-<xsl:variable name="author2_nat" select="''"/>
-<xsl:variable name="author2_born" select="''"/>
-<xsl:variable name="author3_fn" select="''"/>
-<xsl:variable name="author3_ln" select="''"/>
-<xsl:variable name="author3_gender" select="''"/>
-<xsl:variable name="author3_nat" select="''"/>
-<xsl:variable name="author3_born" select="''"/>
+    <xsl:variable name="text_encoding" select="'UTF-8'"/>
+    <xsl:variable name="title" select="'Ла̄зэр ка̄ллса моаййнас'"/>
+    <xsl:variable name="author1_fn" select="'Мыдтҍре Ла̄зэр'"/>
+    <xsl:variable name="author1_ln" select="'Яковлев'"/>
+<xsl:variable name="author1_gender" select="'m'"/>
+<xsl:variable name="author1_nat" select="'Sami'"/>
+<xsl:variable name="author1_born" select="'1918'"/>
+    <xsl:variable name="author2_fn" select="'Е̄льцэ Нӣна'"/>
+    <xsl:variable name="author2_ln" select="'Афанасьева'"/>
+<xsl:variable name="author2_gender" select="'f'"/>
+<xsl:variable name="author2_nat" select="'Sami'"/>
+    <xsl:variable name="author2_born" select="'1939-02-01'"/>
+<xsl:variable name="author3_fn" select="'Михаэль'"/>
+<xsl:variable name="author3_ln" select="'Рисслер'"/>
+<xsl:variable name="author3_gender" select="'m'"/>
+<xsl:variable name="author3_nat" select="'German'"/>
+<xsl:variable name="author3_born" select="'1971-02-16'"/>
 <xsl:variable name="author4_fn" select="''"/>
 <xsl:variable name="author4_ln" select="''"/>
 <xsl:variable name="author4_gender" select="''"/>
 <xsl:variable name="author4_nat" select="''"/>
 <xsl:variable name="author4_born" select="''"/>
 <xsl:variable name="publisher" select="'Humboldt-Universität zu Berlin'"/>
-<xsl:variable name="publChannel" select="''"/>
+<xsl:variable name="publChannel" select="'book'"/>
 <xsl:variable name="year" select="'2008'"/>
 <xsl:variable name="ISBN" select="'978-3-932406-91-1'"/>
 <xsl:variable name="ISSN" select="'1866-5632'"/>

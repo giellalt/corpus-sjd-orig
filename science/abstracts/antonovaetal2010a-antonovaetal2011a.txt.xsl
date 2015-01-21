@@ -6,18 +6,19 @@
     <!-- Add the metainformation manually -->
     <!-- variable filename contains the original name of the file (from submitter)-->
     <xsl:variable name="filename" select="'antonovaetal2010a-antonovaetal2011a.txt'"/>
-    <xsl:variable name="text_encoding" select="''"/>
+    <xsl:variable name="text_encoding" select="'UTF-8'"/>
     <xsl:variable name="title" select="'Оанҍхэсь кыррьй'"/>
     <xsl:variable name="author1_fn" select="'Са̄нндрэ'"/>
     <xsl:variable name="author1_ln" select="'Антонова'"/>
-    <xsl:variable name="author1_gender" select="'female'"/>
+    <xsl:variable name="author1_gender" select="'f'"/>
     <xsl:variable name="author1_nat" select="'Sami'"/>
     <xsl:variable name="author1_born" select="'1932-05-05'"/>
     <xsl:variable name="author2_fn" select="'Элизабет'"/>
     <xsl:variable name="author2_ln" select="'Шеллер'"/>
-    <xsl:variable name="author2_gender" select="'female'"/>
+    <xsl:variable name="author2_gender" select="'f'"/>
     <xsl:variable name="author2_nat" select="'German'"/>
     <xsl:variable name="author2_born" select="'1977-08-04'"/>
+    <!-- in what format do we need dates?-->
     <xsl:variable name="author3_fn" select="''"/>
     <xsl:variable name="author3_ln" select="''"/>
     <xsl:variable name="author3_gender" select="''"/>
@@ -40,7 +41,7 @@
     <xsl:variable name="translator_fn" select="''"/>
     <xsl:variable name="translator_ln" select="''"/>
     <xsl:variable name="translator_gender" select="'unknown'"/>
-    <!-- this text is not a translation-->
+    <!-- this text is not a translation, why do we need this value 'unknwon'?-->
     <xsl:variable name="translator_born" select="''"/>
     <xsl:variable name="translator_nat" select="''"/>
     <!-- select license type: free, standard or other -->
