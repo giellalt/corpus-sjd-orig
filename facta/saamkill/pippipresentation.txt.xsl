@@ -8,16 +8,16 @@
     <xsl:variable name="filename" select="'pippipresentation.txt'"/>
     <xsl:variable name="text_encoding" select="'UTF-8'"/>
     <xsl:variable name="title" select="'Пуэдтӭ тӣррвэнҍ о̄дт са̄мь кырьй вэ̄зхэллмушша'"/>
-    <xsl:variable name="author1_fn" select="'Элизабет Шеллер'"/>
+    <xsl:variable name="author1_fn" select="'Элизабет'"/>
     <xsl:variable name="author1_ln" select="'Шеллер'"/>
     <xsl:variable name="author1_gender" select="'f'"/>
-    <xsl:variable name="author1_nat" select="''"/>
-    <xsl:variable name="author1_born" select="''"/>
-    <xsl:variable name="author2_fn" select="''"/>
-    <xsl:variable name="author2_ln" select="''"/>
-    <xsl:variable name="author2_gender" select="''"/>
-    <xsl:variable name="author2_nat" select="''"/>
-    <xsl:variable name="author2_born" select="''"/>
+    <xsl:variable name="author1_nat" select="'German'"/>
+    <xsl:variable name="author1_born" select="'1977-08-04'"/>
+    <xsl:variable name="author2_fn" select="'Александра'"/>
+    <xsl:variable name="author2_ln" select="'Антонова'"/>
+    <xsl:variable name="author2_gender" select="'f'"/>
+    <xsl:variable name="author2_nat" select="'Sami'"/>
+    <xsl:variable name="author2_born" select="'1932-05-05'"/>
     <xsl:variable name="author3_fn" select="''"/>
     <xsl:variable name="author3_ln" select="''"/>
     <xsl:variable name="author3_gender" select="''"/>
@@ -29,13 +29,13 @@
     <xsl:variable name="author4_nat" select="''"/>
     <xsl:variable name="author4_born" select="''"/>
     <xsl:variable name="publisher" select="'http://saamkill.ucoz.com/'"/>
-    <xsl:variable name="publChannel" select="''"/>
+    <xsl:variable name="publChannel" select="'web'"/>
     <xsl:variable name="year" select="'2014'"/>
     <xsl:variable name="ISBN" select="''"/>
     <xsl:variable name="ISSN" select="''"/>
-    <xsl:variable name="place" select="''"/>
-    <xsl:variable name="genre" select="'ficti'"/>
-    <xsl:variable name="collection" select="''"/>
+    <xsl:variable name="place" select="'Tromsø'"/>
+    <xsl:variable name="genre" select="'facta'"/>
+    <xsl:variable name="collection" select="'Са̄мь кӣл са̄йй'"/>
     <xsl:variable name="translated_from" select="''"/>
     <xsl:variable name="translator_fn" select="''"/>
     <xsl:variable name="translator_ln" select="''"/>
@@ -43,7 +43,7 @@
     <xsl:variable name="translator_born" select="''"/>
     <xsl:variable name="translator_nat" select="''"/>
     <!-- select license type: free, standard or other -->
-    <xsl:variable name="license_type" select="''"/>
+    <xsl:variable name="license_type" select="'free'"/>
     <xsl:variable name="sub_name" select="''"/>
     <xsl:variable name="sub_email" select="''"/>
     <xsl:variable name="wordcount" select="''"/>
